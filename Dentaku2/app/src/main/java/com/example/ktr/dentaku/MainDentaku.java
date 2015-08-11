@@ -19,6 +19,10 @@ public class MainDentaku extends ActionBarActivity {
  * 変数の宣言
  */
 
+    /**
+     * Gittesttexit
+     */
+
 
     /**
             * * 数字の種類の最大数
