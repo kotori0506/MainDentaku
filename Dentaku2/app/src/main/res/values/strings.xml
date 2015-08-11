@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">電卓</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_dentaku">電卓</string>
+    <string name="title_activity_history">電卓</string>
+</resources>
