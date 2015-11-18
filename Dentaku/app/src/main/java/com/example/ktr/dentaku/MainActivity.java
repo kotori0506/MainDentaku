@@ -23,7 +23,6 @@ public class MainActivity extends ActionBarActivity {
 //    public static TextView mSecondText;
 //    public static int mflag;
 
-
     /**
      * 表示用変数
      */
@@ -38,10 +37,8 @@ public class MainActivity extends ActionBarActivity {
     private int mNoKey = 0;
     private int mSkey = 0;
 
-
     SharedPreferences pref;
     SharedPreferences.Editor editor;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,12 +53,8 @@ public class MainActivity extends ActionBarActivity {
             mSaveArry[i]=0.0;
         }*/
 
-
         initView();
-
-
     }
-
 
     private void initView() {
         mAns = (TextView) findViewById(R.id.TextView);
@@ -108,7 +101,6 @@ public class MainActivity extends ActionBarActivity {
             mNoKey = 0;
             mSkey = 0;
         }
-
     }
 
     public void EnterOnClick(View view) {
@@ -121,13 +113,11 @@ public class MainActivity extends ActionBarActivity {
             String str = mAns.getText().toString();
             ansStrArr = str.split(" ");
 
-
             /**
              * 自作四則演算関数
              */
             myF();
         }
-
     }
 
     /**
@@ -138,7 +128,6 @@ public class MainActivity extends ActionBarActivity {
          *　掛け算、割り算を先にさがして計算
          * その後足し算、引き算を行う。
          */
-
         double a = 0;
         double b = 0;
         double c = 0;
@@ -150,7 +139,6 @@ public class MainActivity extends ActionBarActivity {
                 ansStrArr[j + 1] = String.valueOf(c);
                 ansStrArr[j - 1] = String.valueOf("0");
                 ansStrArr[j] = String.valueOf("+");
-
             } else if (ansStrArr[j].equals("/")) {
 
                 a = Double.parseDouble(ansStrArr[j - 1]);
@@ -180,7 +168,6 @@ public class MainActivity extends ActionBarActivity {
                 c = a + b;
                 ansStrArr[j + 1] = String.valueOf(c);
             }
-
             /**
              *　配列の最後になった計算結果を一番目の配列に移動
              */
